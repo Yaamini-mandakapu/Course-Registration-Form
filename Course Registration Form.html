@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="Registration form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Course Registration Form</h1>
+
+     <form>
+        
+         <fieldset id="personal details">
+            <legend>Personal Details</legend>
+            <table>
+                <tr >
+                    <td><label  class="required" >First Name</label></td>
+                    <td  class="inputBox"><input type="text" required pattern="[a-zA-z]{3,8}" class="adjustInput"><span>Enter firstname</span></td>
+                    
+                </tr>
+                <tr >
+                    <td><label  class="required">Last Name</label></td>
+                    <td  class="inputBox"><input type="text" required Pattern="[a-zA-z]{3,8}" class="adjustInput" ><span>Enter lastname</span></td>
+                </tr>
+                <tr >
+                    <td><label class="required">Email</label></td>
+                    <td  class="inputBox"><input type="text" required pattern="[a-z0-9]+@[a-z]+.[a-z]{2,}" class="adjustInput"><span>Enter email</span></td>
+                </tr>
+                <tr>
+                    <td><label  class="required">Phone Number</label></td>
+                    <td class="inputBox"><input type="number" required pattern="[6-9]{1}[0-9]{9}" class="adjustInput"><span>Enter phone number</span></td>
+                </tr>
+                <tr>
+                    <td><label class="required">Gender</label></td>
+                    <td>
+                        <input type="radio" name="Gender">
+                        <label>Male</label>
+                        <input type="radio" name="Gender">
+                        <label >Female</label>
+                        <input type="radio" name="Gender">
+                        <label >Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="required" >Nationality</label></td>
+                    <td><input type="text" required pattern="[a-zA-z]" class="adjustInput"></td>
+                </tr>
+            </table>
+        </fieldset>
+       
+        
+            <fieldset id="education details">
+            <legend>Education Details</legend>
+            <table>
+                <tr>
+                    <td><label class="required">Department</label></td>
+                    <td>
+                    <input type="radio" name="Department">
+                    <label >Computer Science</label>
+                    <input type="radio"  name="Department">
+                    <label >Electrical and Communications</label>
+                    <input type="radio"  name="Department">
+                    <label >Mechanical</label>
+                    <input type="radio"  name="Department">
+                    <label >Civil</label>
+                   </td>
+                </tr>
+                
+                
+                <tr>
+                    <td><label class="required">Year of Graduation</label></td>
+                    <td> 
+                        <select>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                           <option>2023</option>
+                          <option>2024</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="required">Skills</label><br><br>
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                        <label>Java</label><br>
+                        <input type="checkbox">
+                        <label >SQL</label><br>
+                        <input type="checkbox">
+                        <label>HTML</label><br>
+                         <input type="checkbox">
+                         <label >HTML</label><br>
+                          <input type="checkbox">
+                         <label >CSS</label>
+                    </td>
+                </tr>
+                
+            </table>
+        </fieldset>    
+        <input type="submit" readonly>
+    
+    </form>
+   
+</body>
+</html>
