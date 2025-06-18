@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+     font-family: "Roboto", sans-serif;
+}
+form{
+    width: 35%;
+    height: 40%;
+}
+fieldset{
+    background-color: rgb(231, 239, 199);
+    border: 3px solid black;
+    width: 500px;
+    border-radius: 25px;
+}
+legend{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label{
+    margin: 5px 5px 5px 5px;
+}
+
+label[class="required"]::after{
+    content: " *";
+    color:red;
+    font-size: 10px;
+}
+input{
+     margin: 5px 5px 5px 20px;
+     border-color: 4px solid blanchedalmond;
+     padding: 10px;
+     background-color: rgb(231, 239, 199) ;
+     border-color: 5px solid grey;
+}
+.adjustInput{
+    position:relative;
+    width: 300px;
+    height: 20px;
+    border-radius: 5px;
+}
+td[class="inputBox"]>span{
+    position : absolute;
+    left: 650px;
+    transition: 0.5s;
+}
+td>span{
+    margin: 14px 14px 14px 14px;
+}
+td>input:focus~span{
+    transform: translateX(10Px) translateY(-14px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: black;
+    color: white;
+    border-left: 1px solid black ;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(148, 221, 217);
+    border: 3px solid antiquewhite ;
+    border-radius: 25px;
+   
+}
+
+
+    
